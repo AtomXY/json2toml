@@ -1,9 +1,13 @@
 [package]
 name = "json2toml"
-version = "0.1.0"
+version = "1.0.1"
 authors = ["AtomXY <alexvd@inbox.ru>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+#serde = { version = "1.0.130", features = ["derive"] }
+toml = "0.5.0"
+serde_json = "1.0.59"
+
+[[bin]]
+name = "json2toml"
