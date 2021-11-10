@@ -87,7 +87,7 @@ fn parse_file(file: &str) -> std::result::Result<(), String> {
 
 fn parse_list(files: Vec<String>) -> std::result::Result<(), String> {
     // disable multiple file processing
-    if files.len() < 1 || files.len() > 1 {
+    if files.len() < 1 {
         println!("Usage: json2toml file1");
         return Err("You have to specify only one file to convert".to_string());
     }
